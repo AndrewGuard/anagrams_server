@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Search for anagrams</h1>
+  <p>Type in a word!</p>
+
+
+  <form action="/search_word" method="post">
+    <input type="text" name="user_input">
+    <input type="submit" value="Search!">
+  </form>
+</div>
+
+  <%  if @anagrams %>
+    <%= erb :results %>
+  <% end %>
+
